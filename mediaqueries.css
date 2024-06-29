@@ -96,4 +96,56 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 1920px) {
+    .details-container, .color-container{
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        padding: 1.5rem;
+        scale: 1;
+    }
+
+    .experience-details-container{
+        scale: 0.8;
+        margin: 0px -100px 0px;
+    }
+
+
+    .section__pic-container-arcade{
+        width: 390px;
+        float: left;
+    }
     
+    .arcade-pic {
+        float: left;
+        margin-right: 5px;
+        border-radius: 2rem;
+    }
+    
+    .project-about-container {
+        display: flex;
+        align-items: top; 
+        justify-content: center;
+    }
+    
+    .project-about-title{
+        margin: 0px 0px 10px;
+    }
+    
+    .sub-title{
+        margin: 10px 0px 10px;
+    }
+    
+    /*.section__pic-container-GIF{
+        border: 1rem;
+        margin: 330px 100px 0px;
+        scale: 1.5;
+    }*/
+
+    .text-container-arcade{
+        width: 390px;
+        height: 500px;
+        padding: 2rem;
+    }
+}

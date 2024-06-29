@@ -13,7 +13,6 @@
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -29,7 +28,6 @@
             </div>
             <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
@@ -44,7 +42,7 @@
             <h1 class="title">Ahmad Mosawer Asghari</h1>
             <p class="section__text__p2">Game Developer</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
                 Download CV</button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">
                 Contact Info</button>
@@ -89,70 +87,7 @@
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href= './#experience'">
-    </section>
-    <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>Unity</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>C#</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>UnrealEngine</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>C++</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>Git</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>Perforce</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href= './#projects'">
     </section>
     <section id="projects">
         <p class="section__text__p1">Browse My</p>
@@ -165,6 +100,7 @@
                 </div>
                 <h2 class="experience-sub-title project-title">Operatie Infiltratie</h2>
                 <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick= hideProjects()>Read More</button>
                     <button class="btn btn-color-2 project-btn" onclick= hideProjects()>Read More</button>
                 </div>
             </div>
@@ -180,7 +116,7 @@
             </div>
             <div class="details-container color-container" id="HIDE3">
                 <div class="article-container">
-                    <img src="./assets/project-3.png" alt="Project 3" class="project-img">
+                    <img src="./assets/Running.gif" alt="Project 3" class="project-img">
                 </div>
                 <h2 class="experience-sub-title project-title">Star Shipper</h2>
                 <div class="btn-container">
@@ -188,9 +124,9 @@
                     <button class="btn btn-color-2 project-btn" onclick= hideProjects3()>Read More</button>
                 </div>
             </div>
-            <div class="details-container color-container" id="HIDE4">
+            <div class="details-container color-container">
                 <div class="article-container">
-                    <img src="./assets/project-4.png" alt="Project 4" class="project-img">
+                    <img src="./assets/Boat.gif" alt="Project 4" class="project-img">
                 </div>
                 <h2 class="experience-sub-title project-title">Physics Projects</h2>
                 <div class="btn-container">
@@ -199,27 +135,461 @@
                 </div>
             </div>
         </div>
+        </div>
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
     </section>
-    <section id="operatie-infiltratie" style="display: none;">
+    <section id="operatie-infiltratie" style="display: none;" class="oi">
         <h1 class="title">Operatie Infiltratie</h1>
         <div class="section-container">
             <div class="text-container">
-                <p>
-                    Operatie Infiltratie is a project we made with VPRO and studioXNL
-                </p>
-                <p>Our role in this project was to...</p>
+                <div class="project-about-container">
+                    <div class="text-container-arcade">
+                        <h2 class="project-about-title">About Womb's Way Out</h2>
+                        <p>"Operatie Infiltratie" was a live show produced by VPRO, designed to test the effectiveness of a live show on Twitch. The core premise of the show involved the Twitch chat attempting to persuade three politicians to preserve forests. Our task as was to design the environment, create two minigames for the twitch chat to play and to design a way to read out input from OSC and Twitch chat to call functions inside of our Unreal Engine project.</p>
+                        <h3 class="sub-title">This experience features (blueprints showcased below):</h3>
+                        <p>- A way to receive inputs from OSC</p>
+                        <p>- An environment that gets projected onto a LED wall</p>
+                        <p>- A way to read out twitch chat as an input</p>
+                    </div>
+                    <div class="text-container-arcade">
+                        <h2 class="project-about-title">My Role</h2>
+                        <p>My assigned role started out as only developing minigame 1 but during the project I gained more responsobilities such as: helping with minigame 2, developing the main environment changes and making sure everything went well inside the studio that we eventually recorded the live stream at.</p>
+                        <h2 class="project-about-title-source">Source Control</h2>
+                        <p>For this project we used Perforce as our source control so unfortunately I cannot provide a link to any code or assets we used.</p>
+                    </div>
+                    <iframe class="youtube" src="https://www.youtube.com/embed/S80YzodSH8o?si=yx2otgDULRBvgitL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="project-about-container">
+                    <iframe class="blueprint" src="https://blueprintue.com/render/71y87zjs/" scrolling="no" allowfullscreen></iframe>
+                    <iframe class="blueprint" src="https://blueprintue.com/render/hksw8k16/" scrolling="no" allowfullscreen></iframe>
+                    <iframe class="blueprint" src="https://blueprintue.com/render/00bbszc7/" scrolling="no" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
+        <div class="btn-container-oi">
+            <button class="btn btn-color-2 project-btn" onclick= hideProjects()>Read Less</button>
+        </div>
     </section>
-    <section id="wombs-way-out" style="display: none;">
-        <h1 class="title">Womb's Way Out</h1>
+    <section id="wombs-way-out" style="display: none;" class="wwa">
+        <h1 class="title">Womb's Way Out</h1>>
+        <div class="project-about-container">
+            <div class="text-container-arcade">
+                <h2 class="project-about-title">About Womb's Way Out</h2>
+                <p>Womb's Way Out is a game made inspired by the artists called General Idea. General Idea often chose a social problem to turn into serious humor with the goal being to make these topics discussable. For this reason we as a team chose to make our game about abortion. In Womb's Way Out you play as a fetus who is trying to escape the mothers womb as she is actively trying to abort you.</p>
+                <h3 class="sub-title">This game features:</h3>
+                <p>- Movement with an arcade stick</p>
+                <p>- AI Enemy path finding</p>
+                <p>- Unique effects that act as a debuff</p>
+            </div>
+            <div class="text-container-arcade">
+                <h2 class="project-about-title">My Role</h2>
+                <p>My main focus during this project was developing the enemy pathfinding.
+                    Enemies walk around patrolling their rooms and whenever the player walks into their FOV they start chasing the player. We have a bunch of assets in every room so i made it so that any object between the player and the enemy obstructs the enemies FOV.</p>
+                <div class="section__pic-container-GIF">
+                    <img src="./assets/EnemyFOV.gif" alt="GIF picture" class="gif-pic">
+                </div>
+            </div>
+            <div class="section__pic-container-arcade">
+                <img src="./assets/Arcade.jpg" alt="Arcade picture" class="arcade-pic">
+            </div>
+        </div>
+        <div class="project-about-container">
+            <div class="text-container-arcade">
+                <h2 class="project-about-title">Enemy FOV Script</h2>
+                <p>In the update we call DrawVisionCone which is responsible for visualizing how far an enemy can see and which objects obstruct the enemies vision (the objects that obstruct an enemies vision are defined in a layermask) and for chasing the player whenever he is in the visioncone if the player is not inside the visioncone the enemy will instead walk around randomly within the room.</p>
+            </div>
+            <div class="scroll-box">
+                <pre>
+                    <code>
+//Random Movement within sphere
+bool RandomPoint(Vector3 center, float range, out Vector3 result)
+{ 
+    Vector3 randomPoint = center + Random.insideUnitSphere * range; //random point in a sphere 
+    NavMeshHit hit;
+    if (NavMesh.SamplePosition(randomPoint, out hit, 1.0f, NavMesh.AllAreas)) //documentation: https://docs.unity3d.com/ScriptReference/AI.NavMesh.SamplePosition.html
+    {
+        //the 1.0f is the max distance from the random point to a point on the navmesh, might want to increase if range is big
+        //or add a for loop like in the documentation
+        result = hit.position;
+        return true;
+    }
+    result = Vector3.zero;
+    return false;
+}
+
+void DrawVisionCone()//this method creates the vision cone mesh
+{
+    int[] triangles = new int[(VisionConeResolution - 1) * 3];
+    Vector3[] Vertices = new Vector3[VisionConeResolution + 1];
+    Vertices[0] = Vector3.zero;
+    float Currentangle = -VisionAngle / 2;
+    float angleIcrement = VisionAngle / (VisionConeResolution - 1);
+    float Sine;
+    float Cosine;
+    for (int i = 0; i < VisionConeResolution; i++)
+    {
+        Sine = Mathf.Sin(Currentangle);
+        Cosine = Mathf.Cos(Currentangle);
+        Vector3 RaycastDirection = (transform.forward * Cosine) + (transform.right * Sine);
+        Vector3 VertForward = (Vector3.forward * Cosine) + (Vector3.right * Sine);
+        if (Physics.Raycast(transform.position, RaycastDirection, out RaycastHit hit, VisionRange, VisionObstructingLayer))
+        {
+            PlayerSeen = false;
+            Vertices[i + 1] = VertForward * hit.distance;
+        }
+        else
+        {
+            Vertices[i + 1] = VertForward * VisionRange;
+        }
+
+        if (Physics.Raycast(transform.position, RaycastDirection, out RaycastHit Enemy, VisionRange, EnemyLayer) && (!Physics.Raycast(transform.position, RaycastDirection, out RaycastHit _hit, VisionRange, VisionObstructingLayer)))                                                                                             
+        {
+            PlayerSeen = true;
+            Debug.Log("Player seen");
+            if (Vector3.Distance(destination, target.position) > 1.0f && PlayerSeen == true)
+            {
+                destination = target.position;
+                agent.destination = destination;
+            }
+        }
+        else
+        {
+            PlayerSeen = false;
+        }
+
+        Currentangle += angleIcrement;
+    }
+
+    for (int i = 0, j = 0; i < triangles.Length; i += 3, j++)
+    {
+        triangles[i] = 0;
+        triangles[i + 1] = j + 1;
+        triangles[i + 2] = j + 2;
+    }
+    VisionConeMesh.Clear();
+    VisionConeMesh.vertices = Vertices;
+    VisionConeMesh.triangles = triangles;
+    MeshFilter_.mesh = VisionConeMesh;
+}                    
+                    </code>
+                  </pre>
+            </div>
+        </div>
+        <div class="btn-container-less">
+            <button class="btn btn-color-2 project-btn" onclick= hideProjects2()>Read Less</button>
+        </div>
     </section>
-    <section id="star-shipper" style="display: none;">
+    <section id="star-shipper" style="display: none;" class="star">
         <h1 class="title">Star Shipper</h1>
+        <div class="project-about-container">
+            <div class="text-container-arcade">
+                <h2 class="project-about-title">About Starshipper</h2>
+                <p>In Starshipper you play as an astronaut mail carrier who collects stars to deliver them to customers. With your special space vacuum cleaner, you jump from planet to planet, solve puzzles, and suck up stars to deliver them to customers in need. This project was made in a team of two developers and four artists.</p>
+                <h3 class="sub-title">This game features:</h3>
+                <p>- Unique gravity system</p>
+                <p>- Vacuum cleaner to pull items towards or away from you</p>
+            </div>
+            <div class="text-container-arcade">
+                <h2 class="project-about-title">My Role</h2>
+                <p>On this project I worked on a physics script which allows the player to jump from a flat circular planet to another one and walk around it. This was done by giving each planet 2 colliders. One of the colliders was the actual collision with the planet and the other collider acted as an istrigger to assign each planet it's own radius. When jumping into two overlapping radius the player leaves the one he is currently in and goes into the other.</p>
+            </div>
+            <div class="section__pic-container-GIF">
+                <img src="./assets/Starshipper.gif" alt="GIF picture" class="gif-pic">
+            </div>
+        </div>
+        <div class="scroll-box-star">
+            <pre>
+                <code>
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlanetController : MonoBehaviour
+{
+    public float gravityScale = 12f;
+    public float planetRadius = 2f;
+    public float gravityMinRange = 1f;
+    public float gravityMaxRange = 2f;
+    public GameObject planet;
+    public GameObject minRS;
+    public GameObject maxRS;
+
+    // Start is called before the first frame update
+    void Update()
+    {
+        minRS.transform.localScale = new Vector3((planetRadius + gravityMinRange) * 2, (planetRadius + gravityMinRange) * 2, 1);
+        maxRS.transform.localScale = new Vector3((planetRadius + gravityMinRange + gravityMaxRange) * 2, (planetRadius + gravityMinRange + gravityMaxRange) * 2, 1);
+        GetComponent<CircleCollider2D>().radius = gravityMaxRange;
+    }
+
+    void OnTriggerStay2D(Collider2D obj)
+    {
+        float gravitationalPower = gravityScale / planetRadius;
+        float dist = Vector2.Distance(obj.transform.position, transform.position);
+
+        if (dist > (planetRadius + gravityMinRange))
+        {
+            float min = planetRadius + gravityMinRange + 0.5f;
+            gravitationalPower = gravitationalPower * ((min + gravityMaxRange - dist) / gravityMaxRange);
+        }
+
+        Vector3 dir = (transform.position - obj.transform.position) * gravitationalPower;
+        obj.GetComponent<Rigidbody2D>().AddForce(dir);
+
+        if (obj.CompareTag("Player"))
+        {
+            obj.transform.up = Vector3.MoveTowards(obj.transform.up, -dir, gravitationalPower * Time.deltaTime * 5f);
+        }
+    }
+}
+                </code>
+              </pre>
+        </div>
+        <div class="btn-container-star">
+            <button class="btn btn-color-2 project-btn" onclick= hideProjects3()>Read Less</button>
+        </div>
     </section>
-    <section id="physics-projects" style="display: none;">
+    <section id="physics-projects" style="display: none;" class="phys">
         <h1 class="title">Physics Projects</h1>
+        <div class="about-physics-projects">
+            <h2>About Physics Projects</h2>
+            <p>I catogorized these three projects as one due to them being very small projects that revolve around physics which I wanted to make during my free time. All of these projects have some form of physics that I wanted to teach myself as at the time I wanted to be a developer that would mainly work on physics based mechanics.</p>
+        </div>
+        <div class="project-about-container">
+            <div class="text-container-physics">
+                <h2 class="project-about-title">About Buoyancy</h2>
+                <p>Buoyancy is a project I wanted to make since the start of my studies. During my studies I played a lot of sea of thieves in my free time which made me wonder how water works in game engines and how I could make something float on top of that water.</p>
+            </div>
+            <div class="text-container-physics">
+                <h2 class="project-about-title">About Webshooter</h2>
+                <p>Webshooter is a project I wanted to make because I was curious how the spiderman games made the webshooting mechanic and how fortnite made their grappling mechanic. So i did some research and watched a lot of different tutorials on how to make grappling in Unity. By following a bunch of different tutorials this is what I ended up with.</p>
+            </div>
+            <div class="text-container-physics">
+                <h2 class="project-about-title">About Flight</h2>
+                <p>Flight is a project I wanted to make after playing a lot of GTA and i thought it would be a usefull mechanic to teach myself in case I would want to make something similar in the future.</p>
+            </div>
+        </div>
+        <div class="project-about-container">
+            <div class="physics-GIF">
+                <img src="./assets/Boat1.gif" alt="GIF picture" class="gif-pic">
+            </div>
+            <div class="physics-GIF">
+                <img src="./assets/Webshooter.gif" alt="GIF picture" class="gif-pic">
+            </div>
+            <div class="physics-GIF">
+                <img src="./assets/Flight.gif" alt="GIF picture" class="gif-pic">
+            </div>
+        </div>
+        <div class="project-script-container">
+            <div class="scroll-box-phys">
+                <pre>
+                    <code>
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Rendering.HighDefinition;
+                        
+public class Floater : MonoBehaviour
+{
+    public Rigidbody rb;
+    public float depthBeforeSubmerge;
+    public float displacementAmount;
+    public int floaters;
+    public float waterDrag;
+    public float waterAngularDrag;
+    public WaterSurface water;
+    WaterSearchParameters Search;
+    WaterSearchResult SearchResult;
+                        
+    private void FixedUpdate()
+    {
+        rb.AddForceAtPosition(Physics.gravity / floaters, transform.position, ForceMode.Acceleration);
+                        
+        Search.startPosition = transform.position;
+                        
+        water.FindWaterSurfaceHeight(Search, out SearchResult);
+                        
+        if(transform.position.y < SearchResult.height)
+        {
+            float displacementMulti = Mathf.Clamp01(SearchResult.height - transform.position.y / depthBeforeSubmerge) * displacementAmount;
+            rb.AddForceAtPosition(new Vector3(0f, Mathf.Abs(Physics.gravity.y) * displacementMulti, 0f), transform.position, ForceMode.Acceleration);
+            rb.AddForce(displacementMulti * -rb.velocity * waterDrag * Time.fixedDeltaTime, ForceMode.VelocityChange);
+            rb.AddTorque(displacementMulti * -rb.angularVelocity * waterAngularDrag * Time.fixedDeltaTime, ForceMode.VelocityChange);
+        }
+                                
+    }
+}                 
+                    </code>
+                  </pre>
+            </div>
+            <div class="scroll-box-phys">
+                <pre>
+                    <code>
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Webshooter : MonoBehaviour
+{
+    [Header("Input")]
+    public KeyCode swingkey = KeyCode.Mouse0;
+
+    [Header("References")]
+    public LineRenderer lr;
+    public Transform gunTip, cam, player;
+    public LayerMask whatIsGrappleable;
+
+    [Header("Swinging")]
+    private float maxSwingDistance = 100f;
+    private Vector3 swingPoint;
+    private SpringJoint joint;
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKeyDown(swingkey)) StartSwing();
+        if (Input.GetKeyUp(swingkey)) StopSwing();
+    }
+
+    void LateUpdate()
+    {
+        DrawRope();
+    }
+
+    private void StartSwing()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(cam.position, cam.forward, out hit, maxSwingDistance, whatIsGrappleable))
+        {
+            swingPoint = hit.point;
+            joint = player.gameObject.AddComponent<SpringJoint>();
+            joint.autoConfigureConnectedAnchor = false;
+            joint.connectedAnchor = swingPoint;
+
+            float distanceFromPoint = Vector3.Distance(player.position, swingPoint);
+
+            //distance between grapple point and grapple
+            joint.maxDistance = distanceFromPoint * 0.7f;
+            joint.minDistance = distanceFromPoint * 0.25f;
+
+            //customize values
+            joint.spring = 15f;
+            joint.damper = 1f;
+            joint.massScale = 7f;
+
+            lr.positionCount = 2;
+            currentGrapplePosition = gunTip.position;
+        }
+    }
+
+    void StopSwing()
+    {
+        lr.positionCount = 0;
+        Destroy(joint);
+    }
+
+    private Vector3 currentGrapplePosition;
+
+    void DrawRope()
+    {
+        //Don't draw rope when not grappling
+        if (!joint) return;
+
+        currentGrapplePosition = Vector3.Lerp(currentGrapplePosition, swingPoint, Time.deltaTime * 8f);
+
+        lr.SetPosition(0, gunTip.position);
+        lr.SetPosition(1, swingPoint);
+    }
+
+}                   
+                    </code>
+                  </pre>
+            </div>
+            <div class="scroll-box-phys">
+                <pre>
+                    <code>
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using TMPro;
+
+public class PlaneController : MonoBehaviour
+{
+    [Header("Plane Stats")]
+    [Tooltip("How much the throttle ramps up or down")]
+    public float throttleIncrement = 0.1f;
+    [Tooltip("Maximum engine thrust when at 100% throttle")]
+    public float thrustMax = 20f;
+    [Tooltip("How responsive the plane is when rolling, pitching and yawning")]
+    public float responsiveness = 10f;
+    [Tooltip("How much lift force this plane generates as it gains speed")]
+    public float lift = 135f;
+
+    private float throttle;     //Percentage of maximum engine thrust currently being used.
+    private float roll;         //Tilting left to right.
+    private float pitch;        //Tilting front to back.
+    private float yaw;          //"Turning" left to right.
+
+    private float responseModifier
+    {
+        get
+        {
+            return (rb.mass / 10f) * responsiveness;
+        }
+    }
+
+    Rigidbody rb;
+    [SerializeField] TextMeshProUGUI hud;
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
+
+    private void HandleInput()
+    {
+        //set rotational values from axis input
+        roll = Input.GetAxis("Roll");
+        pitch = Input.GetAxis("Pitch");
+        yaw = Input.GetAxis("Yaw");
+
+        //Handle throttle value being sure to clamp it between 0 and 100.
+        if (Input.GetKey(KeyCode.Space)) throttle += throttleIncrement;
+        else if (Input.GetKey(KeyCode.LeftControl)) throttle -= throttleIncrement;
+        throttle = Mathf.Clamp(throttle, 0f, 100f);
+    }
+
+    private void Update()
+    {
+        HandleInput();
+        UpdateHUD();
+    }
+
+    private void FixedUpdate()
+    {
+        //Apply forces to plane
+        rb.AddForce(transform.forward * thrustMax * throttle);
+        rb.AddTorque(transform.up * yaw * responseModifier);
+        rb.AddTorque(transform.right * pitch * responseModifier);
+        rb.AddTorque(transform.forward * roll * responseModifier);
+
+        rb.AddForce(Vector3.up * rb.velocity.magnitude * lift);
+    }
+
+    private void UpdateHUD()
+    {
+        hud.text = "Throttle " + throttle.ToString("F0") + "%\n";
+        hud.text = "Airspeed " + (rb.velocity.magnitude * 3.6f).ToString("F0") + "km/h\n";
+        hud.text = "Altitude " + transform.position.y.ToString("F0") + " m";
+
+    }
+}                   
+                    </code>
+                  </pre>
+            </div>
+        </div>
+        <div class="btn-container-phys">
+            <button class="btn btn-color-2 project-btn" onclick= hideProjects4()>Read Less</button>
+        </div>
     </section>
     <section id="contact">
         <p class="section__text__p1">Get in Touch</p>
@@ -240,7 +610,6 @@
             <div class="nav-links-container">
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>

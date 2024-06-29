@@ -430,3 +430,157 @@ footer {
 footer p {
     text-align: center;
 }
+
+.hidden {
+    color: white;
+    text-decoration-color: white;
+}
+
+.section__pic-container-arcade{
+    float: left;
+    padding: 2rem;
+}
+
+.arcade-pic {
+    float: left;
+
+    border-radius: 2rem;
+    width: 300px;
+}
+
+.project-about-container {
+    display: flex;
+    align-items: top; 
+    justify-content: center;
+
+}
+
+.project-about-title{
+    margin: 0px 0px 20px;
+}
+
+.sub-title{
+    margin: 20px 0px 20px;
+}
+
+.section__pic-container-GIF{
+    width: 490px;
+    padding-top: 2rem;
+}
+
+.gif-pic{
+    border-radius: 2rem;
+}
+
+.text-container-arcade{
+    width: 490px;
+    height: 500px;
+    padding: 2rem;
+}
+
+.scroll-box{
+    height:300px;
+    width: 900px;
+    border:1px solid #ccc;
+    padding-top: 0;
+    overflow:auto;
+}
+
+.wwa{
+    height: 1200px;
+}
+
+.about-physics-projects{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+}
+
+.text-container-physics{
+    width: 490px;
+    height: 230px;
+    padding: 2rem;
+}
+.physics-GIF{
+    padding-right: 50px;
+}
+
+.scroll-box-phys{
+    padding-right: 70px;
+    height:300px;
+    width: 450px;
+    border:1px solid #ccc;
+    padding-top: 0;
+    overflow:auto;
+}
+
+.project-script-container {
+    padding-top: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: top; 
+    justify-content: center;
+}
+
+.phys{
+    height: 1200px;
+}
+.btn-container-less{
+    position: relative;
+    top: -200px; left: 40px;
+    height:50px;
+    width:130px;
+}
+
+.scroll-box-star{
+    position: relative;
+    top: -100px;
+    left: 100px;
+    padding-right: 1000px;
+    height:300px;
+    width: 450px;
+    border:1px solid #ccc;
+    padding-top: 0;
+    overflow:auto;
+}
+
+.btn-container-star{
+    position: relative;
+    top: -90px; left: 90px;
+    height:50px;
+    width:130px;
+}
+
+.star{
+    height: 1200px;
+}
+
+.project-about-title-source{
+    padding-top: 80px;
+}
+
+.youtube{
+    position: relative;
+    top: 90px; left: 30px;
+    border-radius: 2rem;
+    width: 560px;
+    height: 315px;
+}
+
+.blueprint{
+    width: 450px;
+    height: 315px;
+}
+
+.btn-container-oi{
+    position: relative;
+    top: -20px; left: 50px;
+    height:50px;
+    width:130px;
+}
+
+.oi{
+    height: 1200px;
+}
